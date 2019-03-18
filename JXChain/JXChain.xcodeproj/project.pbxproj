@@ -13,8 +13,8 @@
 		12C6E869223F3EAB007250C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C6E868223F3EAB007250C6 /* Assets.xcassets */; };
 		12C6E86C223F3EAB007250C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C6E86A223F3EAB007250C6 /* LaunchScreen.storyboard */; };
 		12C6E86F223F3EAB007250C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C6E86E223F3EAB007250C6 /* main.m */; };
-		12C6E878223F3F06007250C6 /* UIView+Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C6E877223F3F06007250C6 /* UIView+Bridge.m */; };
-		12C6E87B223F3F25007250C6 /* JXChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C6E87A223F3F25007250C6 /* JXChain.m */; };
+		12C6E878223F3F06007250C6 /* UIView+JXChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C6E877223F3F06007250C6 /* UIView+JXChain.m */; };
+		12C6E87B223F3F25007250C6 /* JXChainMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C6E87A223F3F25007250C6 /* JXChainMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		12C6E86B223F3EAB007250C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12C6E86D223F3EAB007250C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C6E86E223F3EAB007250C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12C6E876223F3F06007250C6 /* UIView+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Bridge.h"; sourceTree = "<group>"; };
-		12C6E877223F3F06007250C6 /* UIView+Bridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Bridge.m"; sourceTree = "<group>"; };
-		12C6E879223F3F25007250C6 /* JXChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXChain.h; sourceTree = "<group>"; };
-		12C6E87A223F3F25007250C6 /* JXChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXChain.m; sourceTree = "<group>"; };
+		12C6E876223F3F06007250C6 /* UIView+JXChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JXChain.h"; sourceTree = "<group>"; };
+		12C6E877223F3F06007250C6 /* UIView+JXChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JXChain.m"; sourceTree = "<group>"; };
+		12C6E879223F3F25007250C6 /* JXChainMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXChainMaker.h; sourceTree = "<group>"; };
+		12C6E87A223F3F25007250C6 /* JXChainMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXChainMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,10 @@
 		12C6E875223F3ED0007250C6 /* CoreClasses */ = {
 			isa = PBXGroup;
 			children = (
-				12C6E876223F3F06007250C6 /* UIView+Bridge.h */,
-				12C6E877223F3F06007250C6 /* UIView+Bridge.m */,
-				12C6E879223F3F25007250C6 /* JXChain.h */,
-				12C6E87A223F3F25007250C6 /* JXChain.m */,
+				12C6E876223F3F06007250C6 /* UIView+JXChain.h */,
+				12C6E877223F3F06007250C6 /* UIView+JXChain.m */,
+				12C6E879223F3F25007250C6 /* JXChainMaker.h */,
+				12C6E87A223F3F25007250C6 /* JXChainMaker.m */,
 			);
 			path = CoreClasses;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 				12C6E864223F3EAA007250C6 /* ViewController.m in Sources */,
 				12C6E86F223F3EAB007250C6 /* main.m in Sources */,
 				12C6E861223F3EAA007250C6 /* AppDelegate.m in Sources */,
-				12C6E87B223F3F25007250C6 /* JXChain.m in Sources */,
-				12C6E878223F3F06007250C6 /* UIView+Bridge.m in Sources */,
+				12C6E87B223F3F25007250C6 /* JXChainMaker.m in Sources */,
+				12C6E878223F3F06007250C6 /* UIView+JXChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GGL3426CH;
 				INFOPLIST_FILE = JXChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +324,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GGL3426CH;
 				INFOPLIST_FILE = JXChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
