@@ -5,7 +5,6 @@
 # now:
     ```
     UITextField *textF = [[UITextField alloc] init];  
-    
      textF  
      
     .jx_makeChains  
