@@ -16,6 +16,7 @@
     ```
 
 # now:
+    * 方式1:
     ```
     UITextField *textF = [[UITextField alloc] init];  
      textF  
@@ -33,4 +34,6 @@
     .rightViewMode(UITextFieldViewModeAlways)  
     .rightView(imageView);  
     ```
+    * 方式2:
+    * 方式3:
     
