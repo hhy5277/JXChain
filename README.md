@@ -8,7 +8,7 @@ now:
     .jx_makeChains
     .frame(CGRectMake(50, 200, 300, 50))
     .backgroundColor(UIColor.redColor)
-    .attributedPlaceholder([[NSAttributedString alloc] initWithString:@"我是中国人" attributes:@{NSForegroundColorAttributeName : UIColor.yellowColor}])
+    .attributedPlaceholder([[NSAttributedString alloc] initWithString:@"我是中国人" attributes:@{NSForegroundColorAttributeName :    UIColor.yellowColor}])
     .addToSuperView(self.view)
     .borderStyle(UITextBorderStyleRoundedRect)
     .clearsOnBeginEditing(YES)
