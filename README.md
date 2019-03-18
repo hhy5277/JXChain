@@ -35,5 +35,16 @@
     .rightView(imageView);  
     ```
     * 方式2:
+        UIButton *btn = [[UIButton alloc] init];  
+        [btn jx_makeChains:^(JXChainMaker * _Nonnull maker) {  
+        maker  
+        .frame(CGRectMake(0, 200, 300, 200))  
+        .backgroundColor(UIColor.redColor)  
+        .addToSuperView(self.view)  
+        .title(@"Snip20190318_1", UIControlStateNormal)  
+        .titleColor(UIColor.yellowColor, UIControlStateNormal)  
+        .button_image([UIImage imageNamed:@"Snip20190318_1"], UIControlStateNormal)  
+        .imageEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));  
+    }];  
     * 方式3:
     
