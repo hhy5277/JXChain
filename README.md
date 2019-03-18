@@ -3,6 +3,7 @@
 past:
 
 now:
+    ```
     UITextField *textF = [[UITextField alloc] init];
      textF
     .jx_makeChains
@@ -17,4 +18,5 @@ now:
     .leftView(imageView)
     .rightViewMode(UITextFieldViewModeAlways)
     .rightView(imageView);
+    ```
     
