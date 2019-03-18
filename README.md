@@ -7,29 +7,17 @@
     UITextField *textF = [[UITextField alloc] init];  
      textF  
     .jx_makeChains  
-    
     .frame(CGRectMake(50, 200, 300, 50))  
-    
     .backgroundColor(UIColor.redColor)  
-    
     .attributedPlaceholder([[NSAttributedString alloc] initWithString:@"我是中国人" attributes:@{NSForegroundColorAttributeName :    
     UIColor.yellowColor}])  
-    
     .addToSuperView(self.view)  
-    
     .borderStyle(UITextBorderStyleRoundedRect)  
-    
     .clearsOnBeginEditing(YES)  
-    
     .clearButtonMode(UITextFieldViewModeAlways)  
-    
     .leftViewMode(UITextFieldViewModeAlways)  
-    
     .leftView(imageView)  
-    
     .rightViewMode(UITextFieldViewModeAlways)  
-    
     .rightView(imageView);  
-    
     ```
     
