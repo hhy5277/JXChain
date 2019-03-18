@@ -1,7 +1,7 @@
 # JXChain
 实现设置UI控件属性的链式编程,快速完成一个UI控件所有属性的设置
+
 # past:
-    ```
     UITextField *textF = [[UITextField alloc] init];  
     textF.frame = CGRectMake(50, 200, 300, 50);  
     textF.backgroundColor = UIColor.redColor;  
@@ -13,7 +13,6 @@
     textF.rightViewMode = UITextFieldViewModeAlways;  
     textF.rightView = imageView;  
     [self.view addSubview:textF];  
-    ```
 
 # now:
     * 方式1:
@@ -32,6 +31,7 @@
     .leftView(imageView)  
     .rightViewMode(UITextFieldViewModeAlways)  
     .rightView(imageView);  
+    
     * 方式2:
         UIButton *btn = [[UIButton alloc] init];  
         [btn jx_makeChains:^(JXChainMaker * _Nonnull maker) {  
@@ -44,6 +44,7 @@
         .button_image([UIImage imageNamed:@"Snip20190318_1"], UIControlStateNormal)  
         .imageEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));  
     }];  
+    
     * 方式3:
         UIButton *btn = [UIButton jx_makeChains:^(JXChainMaker * _Nonnull maker) {  
         maker  
