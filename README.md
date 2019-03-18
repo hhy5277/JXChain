@@ -6,7 +6,6 @@
     ```
     UITextField *textF = [[UITextField alloc] init];  
      textF  
-     
     .jx_makeChains  
     
     .frame(CGRectMake(50, 200, 300, 50))  
